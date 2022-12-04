@@ -1,0 +1,52 @@
+.BurgerUp{
+    background-color: orange;
+    width: 200px;
+    height: 40px;
+    border-radius: 10px 10px 0 0;
+    margin: auto;
+    font-size: 12px;
+    padding-top: 10px;
+
+}
+
+.Salad{
+    background-color: greenyellow;
+    width: 250px;
+    height: 8px;
+    border-radius: 2px;
+    margin: auto;
+    font-size: 8px;
+
+}
+.Cheese{
+    background-color: yellow;
+    width: 220px;
+    height: 20px;
+    font-size: 12px;
+    border-radius: 3px;
+    margin: auto;
+
+}
+
+.Beef{
+    background-color: brown;
+    width: 200px;
+    height: 30px;
+    border-radius: 10px;
+    margin: auto;
+
+}
+
+.BurgerDown{
+    background-color: orange;
+    width: 200px;
+    height: 40px;
+    border-radius: 0 0 10px 10px ;
+    margin: auto;
+    font-size: 12px;
+    padding-top: 10px;
+
+
+
+
+}
