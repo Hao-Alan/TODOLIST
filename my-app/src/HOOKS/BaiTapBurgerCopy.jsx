@@ -9,24 +9,37 @@ const BaiTapBurgerCopy = () => {
   // console.log(burgerListx);
 
   const renderBurgerx = () => {
-    let content = [];
-    for (let burger in burgerListx) {
-      console.log("burger", burger);
-      //burger: Salad,Cheese, Beef
-      // console.log(burger);
-      let breadMid = [];
-      for (let ix = 0; ix < burgerListx[burger]; ix++) {
-        // console.log(burgerListx[burger]);
-        //i: value
-        breadMid.push(
-          <div className={`${burger} mt-2`} key={ix}>
-            {burger}
+    // let content = [];
+    // for (let burger in burgerListx) {
+    //   console.log("burger", burger);
+    //   //burger: Salad,Cheese, Beef
+    //   // console.log(burger);
+    //   let breadMid = [];
+    //   for (let ix = 0; ix < burgerListx[burger]; ix++) {
+    //     // console.log(burgerListx[burger]);
+    //     //i: value
+    //     breadMid.push(
+    //       <div className={`${burger} mt-2`} key={ix}>
+    //         {burger}
+    //       </div>
+    //     );
+    //   }
+    //   content.push(breadMid);
+    // }
+    // return content;
+
+    return Object.entries(burgerListx).map(([key, value], index) => {
+      console.log(key, value);
+      let contentDetail = [];
+      for (let i = 0; i < value; i++) {
+        contentDetail.push(
+          <div className={`mt-3 ${key}`} key={i}>
+            {key}
           </div>
         );
       }
-      content.push(breadMid);
-    }
-    return content;
+      return contentDetail;
+    });
   };
 
   return (

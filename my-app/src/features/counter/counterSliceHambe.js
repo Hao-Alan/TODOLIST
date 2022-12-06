@@ -7,7 +7,7 @@ const initialState = {
   num: 1,
 
   burgerList: {
-    Salad: 3, Cheese: 3, Beef: 1
+    Salad: 1, Cheese: 3, Beef: 1
   },
   menu: {
     Salad: 10, Cheese: 20, Beef: 85
