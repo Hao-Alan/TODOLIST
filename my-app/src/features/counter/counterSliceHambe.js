@@ -6,15 +6,15 @@ const initialState = {
 
   num: 1,
 
-  burgerList: [
-    { name: "BurgerUp", quantity: 1, },
-    { name: "Salad", quantity: 1, },
-    { name: "Salad", quantity: 1, },
-    { name: "Cheese", quantity: 1, },
-    { name: "Cheese", quantity: 1, },
-    { name: "Beef", quantity: 1, },
-    { name: "BurgerDown", quantity: 1, },
-  ]
+  burgerList: {
+    Salad: 3, Cheese: 3, Beef: 1
+  },
+  menu: {
+    Salad: 10, Cheese: 20, Beef: 85
+  },
+  total: 85
+
+
 };
 
 export const counterSliceXXX = createSlice({
@@ -38,24 +38,12 @@ export const counterSliceXXX = createSlice({
       state.memberList = [...state.memberList, action.payload]
     },
 
-    handleIncrease: (state, action) => {
-      let newList = [...state.burgerList]
-      // const nnn = { name: action.payload, id: 1 }
-      // const newAddedList = newList.push(nnn)
-      // state.burgerList = [...state.burgerList, nnn]
-      // let newItem = newList.find(food => food.name === action.payload)
-      console.log('payload', action.payload);
-
-      // state.burgerList = [...state.burgerList, newItem]
-      state.burgerList.push({ name: action.payload, id: 1 })
-    }
-
   },
 });
 
 export const { increment, decrement, incrementByAmount, addToList, handleIncrease } = counterSliceXXX.actions;
 
-export const selectBurger = (state) => state.counterxxx.burgerList;
+export const selectBurger = (state) => state.counterxxx;
 
 
 export default counterSliceXXX.reducer;

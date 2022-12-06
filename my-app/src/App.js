@@ -8,6 +8,8 @@ import DemoUseRef from './HOOKS/DemoUseRef';
 import DemoReduxApp from './HOOKS/DemoReduxApp';
 import DemoUseReduxAGAIN from './HOOKS/DemoUseReduxAGAIN';
 import BaiTapBurger from './HOOKS/BaiTapBurger';
+import SpringDemo from './ReactSpring/SpringDemo';
+import BaiTapBurgerCopy from './HOOKS/BaiTapBurgerCopy';
 
 function App() {
   return (
@@ -16,7 +18,9 @@ function App() {
     // <DemoUseRef />
     // <DemoReduxApp />
     // <DemoUseReduxAGAIN />
-    <BaiTapBurger />
+    // <BaiTapBurger />
+    // <SpringDemo />
+    <BaiTapBurgerCopy />
 
   );
 }
